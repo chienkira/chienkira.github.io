@@ -1,0 +1,271 @@
+/* Global Styles */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  text-shadow: black 3px 1px 3px;
+}
+
+.vert-text h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 4em;
+  font-weight: 300;
+}
+
+.long-word {
+  white-space: nowrap;
+}
+
+.list-inline > li {
+  vertical-align: middle;
+}
+
+.vert-text .list-inline a {
+  color: white;
+}
+
+.resume {
+  margin: 0px 0px 20px 0px;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+/* Full Page Image Header Area */
+
+.header {
+  display: table;
+  height: 65%;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Intro */
+
+.intro {
+  padding: 5px 0px;
+}
+
+/* Services */
+
+.services {
+  background: #7fbbda;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.service-item {
+  margin-bottom: 15px;
+}
+
+.pixelMe {
+  visibility: hidden;
+  height: 218px;
+  width: 128px;
+  margin: 0 auto;
+  background: url(../img/pixelme.png);
+}
+
+i.service-icon {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Callout */
+
+.callout {
+  color: #ffffff;
+  display: table;
+  height: 400px;
+  width: 100%;
+  background: url(../img/callout.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Portfolio */
+
+#portfolio .row {
+  max-width: 900px;
+  margin:0 auto;
+}
+
+
+#portfolio .caption {
+  width: 250px;
+  margin: 10px auto;
+  background-color: rgba(69, 173, 255, 0.45);
+  border-radius: 14px;
+  color: white;
+}
+
+#portfolio .thumbnail {
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+}
+
+#portfolio .thumbnail img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+/*.caption {
+    background:rgba(66, 139, 202, 0.75);
+    width:100%;
+    height:25%;
+    padding:2%;
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+}*/
+
+.caption h4 {
+  margin: 0 auto;
+}
+
+.caption a {
+  color: #DCE9F5;
+  text-decoration: underline;
+}
+
+/* Call to Action */
+
+.call-to-action {
+  color: #ffffff;
+  background: #0a5175;
+  padding: 5px 0;
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+
+.call-to {
+  text-shadow: none;
+}
+
+/* Map */
+
+.map {
+  height: 500px;
+}
+
+/* Footer */
+
+.top-scroll {
+  margin-top: 30px;
+}
+
+.top-scroll a {
+  text-decoration: none;
+  color: inherit;
+}
+
+i.scroll {
+  color: #333333;
+}
+
+i.scroll:hover {
+  color: #0a5175;
+}
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .map {
+	height: 75%;
+  }
+
+  .resume.space-m {
+    margin: 35px;
+  }
+
+  .call-to {
+    margin-bottom: 35px;
+  }
+
+  /* Timeline */
+  div.horizontal {
+      width: 100%;
+      overflow: auto;
+  }
+
+  .table {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+  }
+
+  article {
+      width: 100%;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+  }
+}
+
+.spaced {
+  margin:35px;
+}
+
+.block {
+  display:block;
+}
+
+.size-m {
+  font-size: 1.5em
+}
+
+.shy-a, .shy-a:hover {
+  color:inherit;
+}
+
+.shy-a h1 {
+  background: #0a5175;
+}
+
+/* Typed blink cursor */
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
